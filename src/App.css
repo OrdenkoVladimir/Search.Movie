@@ -1,0 +1,33 @@
+.TrafficLight {
+  width: 200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+.TrafficLight_item {
+  opacity: .1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  
+}
+
+.TrafficLight_item_red {
+  background-color: red;
+}
+
+.TrafficLight_item_yellow {
+  background-color: yellow;
+}
+.TrafficLight_item_green {
+  background-color: green;
+}
+
+
+.TrafficLight_item_active {
+  opacity: 1;
+}
