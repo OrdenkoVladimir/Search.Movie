@@ -1,6 +1,5 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ol, ul {
@@ -10,4 +9,96 @@ ol, ul {
 .wrapper {
 	padding: 20px;
 	border: 2px dashed #000;
+}
+
+
+header {
+  text-align: center;
+
+  color:#fff;
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
+  font-size: 27px;
+}
+
+.movies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+
+}
+
+.movie {
+  text-align: center;
+  margin: 0 10px;
+  max-width: 200px ;
+}
+
+.movie img {
+  width: 200px;   
+}
+
+.load {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-right: 5px dashed #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left:-30px;
+  animation: spin 1s infinite linear;
+ 
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.inputSearch {
+ font-size: 20px;
+ font-weight: 600;
+ color: rgb(73, 73, 73);
+ padding: 5px;
+ margin-right: 10px;
+ border-radius: 10px;
+ outline: none;
+ width: 60%;
+}
+
+.searchButton {
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #000;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 100px ;
+  }
+  .movie img {
+    width: 100px;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  25% { transform: rotate(90deg) }
+  50% { transform: rotate(180deg) }
+  100% { transform: rotate(360deg) }
 }
